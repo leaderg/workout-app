@@ -8,6 +8,15 @@ This is a MERN stack workout application for personal use. It will use MongoDB i
 
 The application will allow for a user to log in and start their next workout. The workouts are sequential. They will be able to input the weights and exercise stats. It will be saved for the next exercise, and the user will be able to go back and see their progress (or lack thereof). Various stretch goals exists such as analytics and graphic representations of growth.
 
+## TO DO LIST
+
+  1. Create basic versions of the necessary components using hard coded data.
+  2. Create the User table.
+  3. Login and registration.
+  4. Foundational Workout and Exercise tables created.
+  5. User specific table outlining exercises and stats, Number of sets, reps, and weight.
+  6. Upgrade the visuals.
+
 
 # MERN-boilerplate
 
