@@ -1,3 +1,14 @@
+# Workout application
+
+## Scope
+
+This is a MERN stack workout application for personal use. It will use MongoDB in the web form. After this project is completed there will be a React Native version with an on device Realm database that will be made using this for design considerations. This application may potentially be pushed to a cpanel node VM on a website. We shall see.
+
+## What The App Does
+
+The application will allow for a user to log in and start their next workout. The workouts are sequential. They will be able to input the weights and exercise stats. It will be saved for the next exercise, and the user will be able to go back and see their progress (or lack thereof). Various stretch goals exists such as analytics and graphic representations of growth.
+
+
 # MERN-boilerplate
 
 This is a boilerplate project using the following technologies:
