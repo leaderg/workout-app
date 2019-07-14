@@ -11,7 +11,8 @@ const ExerciseSchema = new mongoose.Schema({
   sets_max: Number,
   reps_min: Number,
   reps_max: Number,
-  target_muscle: String
+  target_muscle: String, // Back, Legs, Triceps...
+  focus: String //Strength Hypertrophy Endurance
 });
 
 const WorkoutSchema = new mongoose.Schema({
@@ -21,7 +22,9 @@ const WorkoutSchema = new mongoose.Schema({
   exercise_2a: [ExerciseSchema],
   exercise_2b: [ExerciseSchema],
   exercise_3a: [ExerciseSchema],
-  exercise_3b: [ExerciseSchema]
+  exercise_3b: [ExerciseSchema],
+  exercise_4a: [ExerciseSchema],
+  exercise_4b: [ExerciseSchema]
 });
 
 const LogSchema = new mongoose.Schema({
