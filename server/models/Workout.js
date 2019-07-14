@@ -12,7 +12,7 @@ const ExerciseSchema = new mongoose.Schema({
   reps_min: Number,
   reps_max: Number,
   target_muscle: String
-})
+});
 
 const WorkoutSchema = new mongoose.Schema({
   sequence: Number,
@@ -22,12 +22,12 @@ const WorkoutSchema = new mongoose.Schema({
   exercise_2b: [ExerciseSchema],
   exercise_3a: [ExerciseSchema],
   exercise_3b: [ExerciseSchema]
-})
+});
 
 const LogSchema = new mongoose.Schema({
   user: [UserSchema],
   exercise: [ExerciseSchema],
-  date: Date,
+  date: {type: Date, default: Date.now}
   set1_weight: Number,
   set1_reps: Number,
   set2_weight: Number,
@@ -40,6 +40,10 @@ const LogSchema = new mongoose.Schema({
   set5_reps: Number,
   set6_weight: Number,
   set6_reps: Number,
-})
+});
 
-module.exports = mongoose.model('Counter', CounterSchema);
+const User = mongoose.model('Users', UserSchema);
+const Workout = mongoose.model('Workouts', WorkoutSchema);
+const Exercise = mongoose.model('Exercises', ExerciseSchema);
+const Log = mongoose.model('Logs', LogSchema);
+module.exports = {User, Workout, Exercise, Log}
