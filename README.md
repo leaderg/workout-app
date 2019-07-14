@@ -10,11 +10,10 @@ The application will allow for a user to log in and start their next workout. Th
 
 ## TO DO LIST
 
-  1. Create basic versions of the necessary components using hard coded data.
-  2. Create the User table.
-  3. Login and registration.
-  4. Foundational Workout and Exercise tables created.
-  5. User specific table outlining exercises and stats, Number of sets, reps, and weight.
+  1. Seed Exercise and Workout data.
+  2. Create basic versions of the necessary components using hard coded data.
+  3. Login and registration handling.
+  4. User input to log table outlining exercises and stats, Number of sets, reps, and weight.
   6. Upgrade the visuals.
 
 
